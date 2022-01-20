@@ -90,7 +90,33 @@ img {
 }
 
 /* Header y Navegación */
+.responsiveMenu{
+  font-size: 2.6rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  display: none;
+  padding: 0 0 1rem 0;
+  text-align: end;
+}
 
+@media (max-width: 768px) {
+  .responsiveMenu {
+    display: block;
+  }
+}
+
+.hamburguer{
+  display: block;
+  transition: all 0.4s 0s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .hamburguer {
+    display: none;
+  }
+}
+
+/*---------------------*/
 .nombre-sitio {
   margin-top: 5rem;
 }
@@ -113,10 +139,9 @@ img {
 @media (min-width: 768px) {
   .navegacion {
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 }
-
 
 /* Hero */
 

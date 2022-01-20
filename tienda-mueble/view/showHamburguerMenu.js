@@ -1,6 +1,6 @@
 export function ShowHamburguerMenu() {
-  document.getElementById("clickOpen").addEventListener("click", (e) => {
-    const responsiveNarvar = document.querySelector(".contenedor-navegacion");
-    responsiveNarvar.classList.toggle("close");
-  });
+  document.getElementById('menuOpen').addEventListener("click", e => {
+    const open = document.querySelector('.contenedor-navegacion');
+    open.classList.toggle('hamburguer');
+  })
 }
